@@ -1,0 +1,185 @@
+@media (max-width: 767px) {
+  /* Custom CSS */
+  p {
+    font-size: 16px;
+  }
+  .pt-100 {
+    padding-top: 50px;
+  }
+  .ptb-100 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .pb-100 {
+    padding-bottom: 50px;
+  }
+  .pb-70 {
+    padding-bottom: 20px;
+  }
+  .section-title {
+    margin-bottom: 30px;
+  }
+  .section-title h2 {
+    font-size: 25px;
+    margin: 0 auto 10px;
+    line-height: 1.4;
+  }
+  .autocomplete-items {
+    margin-top: -20px;
+  }
+ 
+  /* Navbar CSS */
+  .navbar-area .mobile-nav {
+    display: block;
+    position: relative;
+  }
+  .navbar-area .mean-container .mean-bar {
+    background-color: #fff;
+    padding: 0;
+  }
+  .navbar-area .mean-container .mean-bar nav .navbar-nav {
+    height: 300px;
+    overflow: auto;
+  }
+  .navbar-area .mean-container a.meanmenu-reveal {
+    color: #001935;
+    padding: 15px 15px 0 0;
+  }
+  .navbar-area .mean-container a.meanmenu-reveal span {
+    background-color: #001935;
+    position: relative;
+    top: 8px;
+    margin-top: -5px;
+  }
+  .navbar-area .main-nav {
+    display: none !important;
+  }
+  .navbar-area .other-option {
+    display: none;
+  }
+  /* Banner CSS */
+  .banner-section {
+    height: 100%;
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+  .banner-section::after {
+    display: none;
+  }
+  .banner-section .banner-content h1 {
+    font-size: 30px;
+    margin-bottom: 35px;
+  }
+  .banner-section .banner-content .banner-form {
+    padding: 15px;
+  }
+  .banner-section .banner-content .banner-form {
+    margin-bottom: 35px;
+  }
+  .banner-section .banner-content .banner-form .form-group {
+    margin-bottom: 20px;
+  }
+  .banner-section .banner-content .banner-form .form-group label {
+    padding-left: 5px;
+  }
+  .banner-section .banner-content .banner-form .form-group .form-control {
+    height: 50px;
+  }
+  .banner-section .banner-content .banner-form .find-btn {
+    top: 0;
+    padding: 10px 20px;
+  }
+  /* Category CSS */
+  .category-card {
+    padding: 20px;
+  }
+  .category-card i {
+    font-size: 40px;
+  }
+  /* Jobs CSS */
+  .job-section .item-3{
+    order: 3;
+  }
+
+  .job-section .item-4{
+    order: 4;
+  }
+
+  .job-section .p-4{
+    padding: 0 !important;
+  }
+
+  .job-card img{
+    height: 100%;
+    width: 100%;
+  }
+
+  .job-card .thumb-img {
+   display: none;
+  }
+
+  .job-card .job-info {
+    padding-left: 0;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .job-card .job-info ul li {
+    margin-bottom: 5px;
+    padding-right: 0;
+  }
+
+  .job-card .job-info-buttons{
+    text-align: center;
+  }
+
+  .job-card  .cv-tips-btn{
+    margin-bottom: 10px;
+  }
+
+  .job-card .job-save span {
+    margin-right: 10px;
+  }
+
+  .job-card .job-info-buttons .cv-tips-btn {
+    padding: 4px 30px;
+  }
+
+  .job-card .mt-3{
+    margin-top: 0 !important
+  }
+
+  .job-card .job-save a i {
+    top: 5px;
+    position: relative;
+    margin-bottom: 15px;
+  }
+  /* Way To USe CSS */
+  .use-section {
+    padding-bottom: 0;
+  }
+  .use-text {
+    margin-bottom: 50px;
+  }
+  .use-text i {
+    font-size: 40px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    margin-bottom: 20px;
+  }
+  .use-text h3 {
+    margin-bottom: 15px;
+  }
+  
+  /* Footer CSS */
+  .footer-area .footer-widget.pl-60 {
+    padding-left: 0;
+  }
+  .copyright-text p {
+    line-height: 1.4;
+    padding: 0 5px;
+  }
+} 
