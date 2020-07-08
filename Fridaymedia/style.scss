@@ -1,0 +1,729 @@
+@import url("https://fonts.googleapis.com/css?family=Catamaran:400,600|IBM+Plex+Sans:400,500,500i,600,700&display=swap");
+
+body {
+  font-size: 17px;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #707070;
+  line-height: 1.6;
+}
+
+/* Default CSS Start */
+
+img {
+  max-width: 100%;
+}
+
+a {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-decoration: none;
+
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+}
+
+p {
+  font-size: 17px;
+  color: #707070;
+  line-height: 1.8;
+}
+
+button {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  background-color: transparent;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #001935;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+.form-control:focus {
+  -webkit-box-shadow: 0 0 0 0;
+  box-shadow: 0 0 0 0;
+}
+
+.d-table {
+  width: 100%;
+  height: 100%;
+}
+
+.d-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pb-70 {
+  padding-bottom: 70px;
+}
+
+.ptb-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+
+.section-title {
+  margin-bottom: 60px;
+
+  h2 {
+    font-size: 38px;
+    font-weight: 600;
+    max-width: 550px;
+    margin: 0 auto 10px;
+    line-height: 1;
+    text-transform: capitalize;
+  }
+
+  p {
+    max-width: 750px;
+    margin: 0 auto;
+  }
+}
+
+/* Default CSS End */
+
+/* Navbar CSS Start */
+
+.navbar-area .main-nav {
+  background: #fff;
+  padding: 20px 0;
+  position: relative;
+
+  .navbar {
+    padding: 0;
+
+    .navbar-brand {
+      padding: 0;
+    }
+
+    .navbar-nav .nav-item {
+      padding: 10px 0;
+
+      .nav-link {
+        text-transform: capitalize;
+        font-family: "Catamaran", sans-serif;
+        font-size: 17px;
+        color: #061742;
+
+        &.dropdown-toggle::after {
+          border: 0;
+          content: '\ea17';
+          font-family: 'boxicons';
+          vertical-align: middle;
+          line-height: 1;
+        }
+
+        &.active {
+          color: #001935;
+        }
+      }
+    }
+  }
+}
+
+.mobile-nav.mean-container .mean-nav ul li a.active {
+  color: #001935;
+}
+
+.navbar-area .main-nav .navbar {
+  .navbar-nav .nav-item .dropdown-menu {
+    padding: 0;
+    border-radius: 0;
+    background: none;
+
+    .nav-item {
+      padding: 0;
+
+      .nav-link {
+        border-bottom: 1px dashed #4d5877;
+        background: #fff;
+        font-size: 15px !important;
+
+        &.active, &:hover {
+          color: #ffffff;
+          background: #657294 !important;
+        }
+      }
+
+      &:last-child .nav-link {
+        border-bottom: 0;
+      }
+    }
+  }
+
+  .other-option {
+    .signin-btn, .signup-btn {
+      color: #ffffff;
+      font-family: "Catamaran", sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 5px 20px;
+      background: #001935;
+    }
+
+    .signin-btn:hover {
+      background: #ffffff;
+      color: #001935;
+    }
+
+    .signup-btn {
+      &:hover {
+        background: #ffffff;
+        color: #001935;
+        color: #fd1616;
+        background: none;
+      }
+
+      background: none;
+      padding: 0;
+      margin-right: 10px;
+    }
+  }
+}
+
+/* Navbar CSS End */
+/* Banner CSS Start */
+
+.banner-section {
+  height: 350px;
+  background-image: url(../assets/AJS-Hero-Desktop.jpg);
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 4, 44, 0.6);
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .banner-content {
+    p {
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: 65px;
+      font-weight: 700;
+      color: #ffffff;
+      max-width: 630px;
+      margin: 0 auto 40px;
+      text-transform: capitalize;
+    }
+
+    .banner-form {
+      padding: 30px;
+      border-radius: 10px;
+      margin-bottom: 45px;
+
+      .form-group {
+        margin-bottom: 0;
+        line-height: 1;
+        text-align: left;
+
+        label {
+          font-size: 15px;
+          color: #5c5a5a;
+          font-weight: 600;
+          padding-left: 20px;
+        }
+
+        .form-control {
+          height: 60px;
+          border-radius: 10px;
+          padding: 5px 20px 10px;
+        }
+
+        ::-webkit-input-placeholder, :-ms-input-placeholder, ::-ms-input-placeholder, ::placeholder {
+          font-size: 14px;
+          font-weight: 500;
+          color: #8e8d8d;
+        }
+      }
+
+      .find-btn {
+        background: #fd1616;
+        font-size: 16px;
+        font-weight: 600;
+        width: 100%;
+        color: #ffffff;
+        border-radius: 10px;
+        position: relative;
+        padding: 16px 20px;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+
+        &:hover {
+          background: #001935;
+        }
+
+        i {
+          left: 10px;
+          top: 2px;
+          position: relative;
+        }
+      }
+    }
+
+    .keyword {
+      padding-left: 0;
+      margin-bottom: 0;
+
+      li {
+        display: inline-block;
+        color: #ffffff;
+        font-size: 17px;
+        font-weight: 500;
+
+        a {
+          color: #ffffff;
+          font-size: 17px;
+          font-weight: 500;
+
+          &:hover {
+            color: #fd1616;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Banner CSS End */
+
+/* Autoomplete Starts */
+/*the container must be positioned relative:*/
+
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 20px;
+  right: 20px;
+
+  div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+
+    &:hover {
+      background-color: #e9e9e9;
+    }
+  }
+}
+
+/*when hovering an item:*/
+
+/*when navigating through the items using the arrow keys:*/
+
+.autocomplete-active {
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+
+/* Autocomplete Ends */
+
+/* Category CSS Start */
+
+.categories-section {
+  background-color: #001935;
+
+  h2, h3, a {
+    color: #fff !important;
+  }
+}
+
+/* Category CSS End */
+
+/* Category Section CSS Start */
+
+.category-card {
+  text-align: center;
+  padding: 20px 20px;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+  margin-bottom: 30px;
+  border: 1px solid transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #fff;
+  border-radius: 5px;
+
+  i {
+    font-size: 50px;
+    color: #fd1616;
+    margin-bottom: 25px;
+    display: inline-block;
+    line-height: 1;
+  }
+
+  h3 {
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    border: 1px solid #fd1616;
+    margin-top: -5px;
+  }
+}
+
+/* Category Section CSS End */
+
+/* Companies hiring CSS Starts */
+
+.companies-hiring {
+  text-align: center;
+}
+
+.companies-hiring-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.carousel-image {
+  width: 150px;
+  height: 100px;
+  padding: 15px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: #001935;
+  border-radius: 25px;
+}
+
+/*  Companies hiring CSS Ends */
+
+/* Job Section CSS Start */
+
+.job-section {
+  a {
+    color: #000 !important;
+  }
+
+  .item-3 {
+    order: 4;
+  }
+
+  .item-4 {
+    order: 3;
+  }
+}
+
+.job-card {
+  border: 1px solid lightgray;
+  height: 250px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-bottom: 30px;
+
+  .thumb-img {
+    max-width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 80px;
+    background: #ffffff;
+  }
+
+  .job-info {
+    h3 {
+      margin-bottom: 10px;
+      font-size: 20px;
+
+      a {
+        color: #001935;
+
+        &:hover {
+          color: #fd1616;
+        }
+      }
+    }
+
+    ul {
+      padding-left: 0;
+      margin-bottom: 0;
+
+      li {
+        display: block;
+        font-size: 15px;
+        padding-right: 10px;
+        margin-bottom: 5px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        a {
+          color: #fd1616;
+          font-weight: 500;
+        }
+
+        i {
+          top: 2px;
+          position: relative;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .job-info-buttons {
+    .cv-tips-btn {
+      border: 1px solid lightgray;
+      border-radius: 5px;
+      padding: 8px 40px;
+    }
+
+    .upload-cv-btn {
+      border: 1px solid lightgray;
+      border-radius: 5px;
+      padding: 8px 20px;
+      background-color: #3955bc;
+      color: #fff;
+    }
+  }
+
+  .job-save {
+    text-align: center;
+
+    span {
+      background: #ffffff;
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 10px;
+      color: #fd1616;
+      -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+      margin-bottom: 15px;
+      font-size: 15px;
+    }
+
+    a i {
+      color: #afafaf;
+      font-size: 20px;
+      background: #ffffff;
+      border-radius: 20px;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      border: 1px dashed #afafaf;
+      display: inline-block;
+      margin-bottom: 10px;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+
+      &:hover {
+        background: #fd1616;
+        color: #ffffff;
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+      font-size: 14px;
+
+      i {
+        border: 0;
+        width: inherit;
+        height: inherit;
+        top: 3px;
+        position: relative;
+        line-height: 1;
+        font-size: 18px;
+      }
+    }
+  }
+
+  &:hover {
+    -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+    border: 1px dashed #fd1616;
+  }
+}
+
+/* Job Section CSS End */
+
+/* Footer CSS Start */
+
+.footer-area {
+  background: #001935;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    background-position: center center;
+    background-size: cover;
+    width: 140px;
+    height: 138px;
+    right: 60px;
+    top: 70px;
+    opacity: .2;
+    -webkit-animation: rotate 30s infinite linear;
+    animation: rotate 30s infinite linear;
+  }
+
+  .footer-widget {
+    margin-bottom: 30px;
+
+    .footer-logo {
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #ffffff;
+      margin-bottom: 30px;
+    }
+
+    .footer-social a i {
+      color: #3955bc;
+      background: #ffffff;
+      font-size: 18px;
+      width: 35px;
+      height: 35px;
+      text-align: center;
+      border-radius: 50px;
+      line-height: 35px;
+      margin-right: 5px;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+
+      &:hover {
+        background: #fd1616;
+        color: #ffffff;
+      }
+    }
+
+    h3 {
+      color: #ffffff;
+      position: relative;
+      margin-bottom: 40px;
+      font-weight: 600;
+
+      &::before {
+        position: absolute;
+        content: '';
+        background: #ffffff;
+        height: 2px;
+        width: 50px;
+        left: 0;
+        bottom: -15px;
+      }
+    }
+
+    ul {
+      padding-left: 0;
+      margin-bottom: 0;
+
+      li {
+        list-style-type: none;
+        color: #d3d3d3;
+        margin-bottom: 5px;
+
+        a {
+          color: #d3d3d3;
+
+          i {
+            color: #fd1616;
+            top: 2px;
+            position: relative;
+          }
+
+          &:hover {
+            color: #fd1616;
+          }
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &.footer-info ul li {
+      margin-bottom: 12px;
+
+      span {
+        display: block;
+
+        i {
+          color: #fd1616;
+          margin-right: 5px;
+        }
+      }
+    }
+
+    &.pl-60 {
+      padding-left: 60px;
+    }
+  }
+}
+
+.copyright-text {
+  background: #03143b;
+  padding: 20px;
+
+  p {
+    margin-bottom: 0;
+    color: #ffffff;
+    line-height: 1;
+  }
+}
+
+/* Footer CSS End */
